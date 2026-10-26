@@ -86,7 +86,7 @@ console.log("Numbers: "+string)
 console.log("Sum: "+sum)
 console.log("Average: "+average)
 console.log("Even count: "+evencount)
-console.log("Largest: "+largest)
+console.log("Largest: "+largest) 
 // STEP 3: Create an empty array called "numbers" using let.
 //         let numbers = [];
 
