@@ -112,7 +112,7 @@ console.log("Largest: "+largest)
 
 
 
-
+ 
 // STEP 7: Calculate the average.
 //         Average = sum / numbers.length
 //         Print: console.log("Average: " + average)
