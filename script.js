@@ -17,21 +17,76 @@
 // STEP 1: Create an array called "colors" with exactly
 //         three strings: "red", "green", "blue"
 //         Use let to declare it.
-
+let colors = ["red","green","blue"]
 // STEP 2: Use a for loop to print each color.
 //         Each line should say exactly:
 //         "Color: red"
 //         "Color: green"
 //         "Color: blue"
 //         Use: console.log("Color: " + colors[i])
-
+for (i=0; i<colors.length; i++) {
+    console.log("Color: "+colors[i])
+}
 
 // ============================================
 //  MAIN: Number Analyzer
 // ============================================
 // Collect 5 numbers from the user, store them in an array,
 // then calculate and display statistics.
+let numbers=[]
+for (i=0; i<4; i++) {
+    let input=parseFloat(prompt("Enter number"+(i+1)))
+    numbers.push(input)
+}
 
+let sum=0
+
+for(i=0; i<numbers.length; i++) {
+    sum+=numbers[i]
+
+}
+
+let average=sum/numbers.length
+
+let string=""
+
+
+for(i=0; i<numbers.length; i++) {
+    string+=numbers[i]+", "
+
+}
+
+let evencount=0
+
+for(i=0; i<numbers.length; i++) {
+    if (i%2==0) {
+        evencount+=1
+    }
+
+}
+
+let largest=0
+
+
+for (i=0; i<numbers.length; i++) {
+
+
+
+    if (numbers[i]<numbers[i+1]) {
+        largest=numbers[i+1]
+    } else {
+        largest=numbers[i]
+    }
+
+}
+
+
+
+console.log("Numbers: "+string)
+console.log("Sum: "+sum)
+console.log("Average: "+average)
+console.log("Even count: "+evencount)
+console.log("Largest: "+largest)
 // STEP 3: Create an empty array called "numbers" using let.
 //         let numbers = [];
 
@@ -54,6 +109,9 @@
 // STEP 6: Calculate the sum of all numbers.
 //         Use a for loop to add each number to a running total.
 //         Print: console.log("Sum: " + sum)
+
+
+
 
 // STEP 7: Calculate the average.
 //         Average = sum / numbers.length
